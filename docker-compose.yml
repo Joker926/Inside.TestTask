@@ -1,0 +1,22 @@
+version: '3.4'
+
+services:
+  inside.testtask.mc1:
+    image: ${DOCKER_REGISTRY-}insidetesttaskmc1
+    build:
+      context: .
+      dockerfile: Inside.TestTask.MC1/Dockerfile
+
+  inside.testtask.mc2:
+    image: ${DOCKER_REGISTRY-}insidetesttaskmc2
+    build:
+      context: .
+      dockerfile: Inside.TestTask.MC2/Dockerfile
+
+  inside.testtask.mc3:
+    image: ${DOCKER_REGISTRY-}insidetesttaskmc3
+    build:
+      context: .
+      dockerfile: Inside.TestTask.MC3/Dockerfile
+    
+
